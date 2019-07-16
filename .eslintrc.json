@@ -1,0 +1,137 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "plugins": [
+    "node",
+    "security",
+    "import"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:node/recommended",
+    "plugin:security/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8
+  },
+  "rules": {
+    "node/no-unpublished-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "object-shorthand": "off",
+    "block-scoped-var": "off",
+    "padded-blocks": "off",
+    "no-underscore-dangle": "off",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "MemberExpression": "off"
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-debugger": "error",
+    "arrow-body-style": [
+      "off",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": true
+      }
+    ],
+    "func-names": [
+      "warn",
+      "always"
+    ],
+    "no-console": "warn",
+    "no-alert": "warn",
+    "no-shadow": "warn",
+    "max-lines": [
+      "warn",
+      120
+    ],
+    "max-statements": [
+      "warn",
+      25
+    ],
+    "max-params": [
+      "warn",
+      4
+    ],
+    "no-invalid-this": "warn",
+    "camelcase": "warn",
+    "func-name-matching": [
+      "warn",
+      "always"
+    ],
+    "curly": [
+      "warn",
+      "all"
+    ],
+    "no-warning-comments": [
+      "warn",
+      {
+        "terms": [
+          "todo",
+          "fixme",
+          "fix me"
+        ],
+        "location": "anywhere"
+      }
+    ],
+    "valid-jsdoc": [
+      "warn",
+      {
+        "prefer": {
+          "arg": "param",
+          "argument": "param",
+          "constructor": "class",
+          "return": "returns"
+        },
+        "preferType": {
+          "Boolean": "boolean",
+          "Number": "number",
+          "String": "string",
+          "Function": "function",
+          "Promise": "promise",
+          "Array": "array"
+        },
+        "requireReturn": false,
+        "requireReturnType": true,
+        "matchDescription": ".+",
+        "requireParamDescription": true,
+        "requireReturnDescription": true
+      }
+    ],
+    "require-jsdoc": [
+      "warn",
+      {
+        "require": {
+          "FunctionDeclaration": true,
+          "MethodDefinition": true,
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true
+        }
+      }
+    ]
+  }
+}

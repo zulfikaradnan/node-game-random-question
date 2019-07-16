@@ -1,0 +1,37 @@
+{
+  "name": "@zulfikaradnan/game-random-question",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js src/",
+    "lint:fix": "eslint --ext .js src/ --fix",
+    "start": "npm run lint && node .",
+    "release": "npm run lint && standard-version",
+    "release:beta": "npm run release -- --prerelease beta",
+    "release:major": "npm run release -- --release-as major",
+    "release:minor": "npm run release -- --release-as minor",
+    "release:patch": "npm run release -- --release-as patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zulfikaradnan/node-game-random-question.git"
+  },
+  "author": "Zulfikar Adnan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zulfikaradnan/node-game-random-question/issues"
+  },
+  "homepage": "https://github.com/zulfikaradnan/node-game-random-question#readme",
+  "dependencies": {
+    "inquirer": "^6.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-security": "^1.4.0",
+    "standard-version": "^6.0.1"
+  }
+}
